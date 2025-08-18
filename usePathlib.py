@@ -8,7 +8,6 @@ def manage_files_and_directories():
     reports_dir = current_dir / 'reports'
     reports_dir.mkdir(exist_ok=True)
     print(f"Создана папка: {reports_dir}")
-
     os.chdir(reports_dir)
     print(f"Текущая директория: {Path.cwd()}")
 
