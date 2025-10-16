@@ -44,7 +44,7 @@ import pytest_asyncio
 @pytest_asyncio.fixture
 async def pool():
     """Фикстура для создания пула соединений с базой данных"""
-    # Создаем пул соединений
+
     pool = await asyncpg.create_pool(
         "postgresql://postgres:postgres@localhost/test_db",
         min_size=1,
